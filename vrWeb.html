@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap-grid.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+       
+       
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <style>
+        
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                font-family:"poppins",sans-serif;
+                flex-wrap: wrap;
+            }
+
+            body{ 
+            width: 100%;
+            margin: 0;
+            height:auto;
+            background-color: #000000;
+            }
+
+            header{
+                height: 100px;
+                width: 100%;
+                background-color: #000000;
+                color:white;
+                text-align: center;
+                padding-top: 20px;
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+            .main{
+                display: inline-flex;
+                width: 100%;
+            }
+            .main2{
+                display: inline-flex;
+                width: 100%;
+                padding-left: 70px;
+                font-family: 'poppins';
+            }
+            .child{
+                color: #272829;
+                position: absolute;
+                left:10px;
+                top: 25px;
+            } 
+            .child2{
+                color: #272829;
+                position: absolute;
+                right:10px;
+                top: 20px;
+            }
+            ul{
+                display: inline-flex;
+            }
+            ul li{
+                list-style-type: none;
+                padding: 10px;
+                padding-top: 20px;
+            }
+            ul li a{
+                text-decoration: none;
+                color: white;
+                border-radius: 50px;
+                font-family:"poppins";
+                padding: 5px;
+                transition-timing-function: ease-in-out;
+            }
+            ul li a:hover{
+                background-color:rgb(50, 127, 235);
+                transition: .2s ease;
+            }
+            li a:active{
+                background-color: red;
+            }
+            ul li :hover{
+                transform: scale(1.3);
+            }
+
+            .section2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background:#000000;
+                width: 100%;
+                height: 900px;
+                background-image: url(https://i.pinimg.com/564x/bb/6c/52/bb6c5247b5b71ae58383594a93f76007.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                }
+                .imggtext{
+                    color: white;
+                    display: flex;
+                    position: absolute;
+                    top: 770px;
+                    font-size: 30px;
+                    animation:fade11 0.7s forwards;
+                    animation-timeline: view();
+                    animation-range-start: cover;
+                    animation-range-end: contain;
+                    opacity: 0;
+                    height: 100px;
+                }
+
+                @keyframes fade11{
+                    from{
+                        opacity: 0;
+                        bottom:0;
+                    }
+                    to{
+                        opacity:1;
+                        bottom: 100%;
+                    }
+                }
+                
+
+                .imgtext{
+                     color: white;
+                    display: inline-flex;
+                    position: absolute;
+                    top: 230px;
+                    font-size: 100px;
+                    animation:top 0.9s forwards;
+                    animation-delay: .6s;
+                    opacity: 0;
+                    justify-content: first baseline;
+                    height: 100px;
+                }
+
+                .imgtext2{
+                    color: white;
+                    display: inline-flex;
+                    position: absolute;
+                    top: 350px;
+                    font-size: 40px;
+                    animation:top 0.9s forwards;
+                    animation-delay: .6s;
+                    opacity: 0;
+                    height: 100px;
+                }
+                @keyframes top{
+                    0%{
+                        opacity: 0;
+                        top: 100px;
+                    }
+                    100%{
+                        opacity: 100%;
+                        bottom: 0;
+                    }
+                }
+                
+            .section{
+                display: flex;
+                flex-direction: column;
+                min-height:auto;
+                justify-content: center;
+                align-items: center;
+                background:#000000;
+                width: 100%;
+                padding-top: 200px;
+            }
+           .scroll-reveal{
+            color: hsl(0 0% 100% / 0);
+            background-clip: text;
+            background-repeat: no-repeat;
+            font-size: 70px;
+            background-size: 0% 100%;
+            background-image: linear-gradient(90deg, red ,blue);
+            animation: scroll-reveal linear forwards;
+            animation-timeline: view();
+            animation-range-start: cover 20vh;
+            animation-range-end:cover 50vh;
+           }
+           @keyframes scroll-reveal{
+            to{ background-size: 100% 100%;}
+           }
+
+
+           .section3{
+                display: flex;
+                flex-direction:column;
+                min-height:auto;
+                justify-content:;
+                align-items:;
+                background:#000000;
+                width: 100%;
+                padding-top: 100px;
+                padding-left: 200px;
+            }
+
+           .animage{
+            flex-direction: column;
+            position: absolute;
+            background-image: url(https://i.pinimg.com/236x/96/02/65/9602654ede9c01655826a7adc47f5ced.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:500px;
+            height: 400px;
+            opacity: 0;
+            animation: fade-in 0.9s forwards;
+            animation-delay: 1s;
+            animation-timeline: view();
+            animation-range-start: cover;
+            animation-range-end:contain 10vh;
+            
+           }
+           @keyframes fade-in{
+            from{
+                scale: 0.6;
+                opacity: 0;
+            }
+            to{
+                scale: 1;
+                opacity: 1;
+            }
+           }
+           .anitext{
+            color: white;
+            position: absolute;
+            padding-left:450px;
+            font-size: 30px;
+            opacity: 0;
+            width: 70%;
+            animation:fade 0.6s forwards;
+            animation-delay: 1s;
+            animation-timeline: view() ;
+            animation-range-start: cover;
+            animation-range-end: contain 20vh;
+
+           
+           }
+           @keyframes fade{
+            from{ right:0;
+                opacity: 0;
+
+            }
+            to{
+                right:170px;
+                opacity: 1;
+            }
+
+           }
+
+
+
+           .section4{
+                display: flex;
+                flex-direction:column;
+                min-height:auto;
+                justify-content:;
+                align-items:;
+                background:#000000;
+                width: 100%;
+                padding-top:500px;
+                padding-right:200px;
+            }
+
+            .anitext2{
+            color: white;
+            position: absolute;
+            padding-right:450px;
+            font-size: 30px;
+            opacity: 0;
+            width: 70%;
+            animation:fade1 0.6s forwards;
+            animation-delay: 1s;
+            animation-timeline: view() ;
+            animation-range-start: cover;
+            animation-range-end: contain 20vh;
+
+           
+           }
+           @keyframes fade1{
+            from{ left:0;
+                opacity: 0;
+            }
+            to{
+                left:170px;
+                opacity: 1;
+            }
+
+           }
+
+           .animage2{
+            flex-direction: column;
+            position: absolute;
+            padding-left:500px;
+            background-image: url(https://i.pinimg.com/564x/94/c8/42/94c842a65170a1763f9125be3ea4944e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:500px;
+            height: 400px;
+            opacity: 0;
+            animation: fade-in 0.9s forwards;
+            animation-delay: 1s;
+            animation-timeline: view();
+            animation-range-start: cover;
+            animation-range-end:contain 10vh;
+            right: 200px;
+        
+           }
+           @keyframes fade-in{
+            from{
+                scale: 0.6;
+                opacity: 0;
+            }
+            to{
+                scale: 1;
+                opacity: 1;
+            }
+           }
+           
+
+           
+           .section5{
+                display: flex;
+                flex-direction:column;
+                min-height:auto;
+                justify-content:;
+                align-items:;
+                background:#000000;
+                width: 100%;
+                padding-top: 500px;
+                padding-left: 200px;
+            }
+
+           .animage3{
+            flex-direction: column;
+            position: absolute;
+            background-image: url(https://i.pinimg.com/564x/d4/8a/e1/d48ae1c492b91b642b369d1c67a4a8dc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:500px;
+            height: 400px;
+            opacity: 0;
+            animation: fade-in 0.9s forwards;
+            animation-delay: 1s;
+            animation-timeline: view();
+            animation-range-start: cover;
+            animation-range-end:contain 10vh;
+            
+           }
+           @keyframes fade-in{
+            from{
+                scale: 0.6;
+                opacity: 0;
+            }
+            to{
+                scale: 1;
+                opacity: 1;
+            }
+           }
+           .anitext3{
+            color: white;
+            position: absolute;
+            padding-left:450px;
+            font-size: 30px;
+            opacity: 0;
+            width: 70%;
+            animation:fade 0.6s forwards;
+            animation-delay: 1s;
+            animation-timeline: view() ;
+            animation-range-start: cover;
+            animation-range-end: contain 20vh;
+
+           
+           }
+           @keyframes fade{
+            from{ right:0;
+                opacity: 0;
+
+            }
+            to{
+                right:170px;
+                opacity: 1;
+            }
+
+           }
+
+
+           .section6{
+                display: flex;
+                flex-direction: column;
+                min-height:auto;
+                justify-content: center;
+                align-items: center;
+                background:#000000;
+                width: 100%;
+                padding-top:;
+           }
+
+           
+           .services{
+            display: inline-flex;
+            color:hsl(0 100% 100/0);
+            background-clip: text;
+            background-repeat: no-repeat;
+            background-size: 0% 100%;
+            font-size: 70px;
+            text-align: center;
+            padding-top: 450px;
+            /* padding-left: 500px; */
+            background-image: linear-gradient(90deg,red ,blue);
+            animation: scroll-reveal linear forwards;
+            animation-timeline: view();
+            animation-range-start: contain;
+            animation-range-end:contain;
+           }
+
+           @keyframes scroll-reveal{
+            to{ background-size: 100% 100%;}
+           }
+
+
+           .parent{
+            display: flex;
+            padding: 50px;
+            padding-top: 50px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card{
+            display: table-row;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        .card2{
+            display: table-column;
+            height: 200px;
+        }
+        .card:hover{
+            scale:1.1;
+        }
+
+
+        .button{
+            right: 0;
+            bottom: 0;
+            position: fixed;
+            height: 40px;
+            width: 30px;
+        }
+
+        .ftr:hover{
+            text-decoration: underline red;
+        }
+        
+        </style>
+    </head>
+    <body>
+    <!--header-->
+        <header>
+            <div class="main2">
+            <h1>Vintage Restoration</h1></div>
+            <div class="main"  >
+                <div class="child">
+                    <img src="data:image/jpeg;base64,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"  height="50px" width="50px">
+                 </div>
+                 <div class="child2">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#services">services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">about</a></li>
+                     </ul>
+                 </div>
+           </div>
+             </header>
+             <!--header ends-->
+       
+             <!-- landing page -->
+             <div class="row" id="home">
+                <div class="col col-lg col-sm col-md">
+             <div class="section2">
+                <div class="imgtext">
+                    Hola!
+                </div>
+                <div class="imgtext2">Wanna RESTORE ur car?</div>
+                <div class="imggtext">Not just your&nbsp;<span style="color: red;"> BRAND NEW ONE.</span>&nbsp;Your old buddy also capable of that&nbsp;<span style="color: red;">SPEED.</span></div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg col-sm col-md">
+             <div class="section">
+             <div class="scroll-reveal">
+                REVIVE RESTORE REUSE
+                <p></p>
+             </div>
+      </div>
+             </div>
+             </div>
+                
+             <div class="container-fluid">
+                <div class="row">
+             <div class="section3 col-lg-4">
+                <div class="animage"></div>
+                </div>
+                <div class="col-lg-8 text-wrap" id="about">
+                <div class="anitext">
+                    <p>"Our Vintage restoration garge lacated in vizag,andhra predesh, 
+                    bharath County and is a business specializing in Cars, Domestic, 
+                    Trucks and Vans. Phillips Auto Body is listed in the categories Auto Body Repair, 
+                    Auto Body Repair & Paint, Auto Body & Fender Work and Auto Body Repair & Service 
+                    and offers Color Matching, Estimates and Paint Matching."</p>
+                </div>
+                </div>
+                
+             </div>
+             </div>
+
+             <div class="container-fluid">
+                <div class="row">
+             <div class="section4 col-lg-8">
+                <div class="anitext2">
+                    <p>"At our restoration garage, we breathe new life into classic cars. 
+                        With meticulous attention to detail, we restore each vehicle to its former glory. 
+                        Our expert team is passionate about preserving automotive history. 
+                        From engine rebuilds to bodywork, we ensure every project is a masterpiece. 
+                        Trust us to revive your classic car dreams."</p>
+                    
+                </div>
+                </div>
+                <div class="col-lg-4">
+                <div class="animage2">
+                    </div>
+                </div>
+                
+             </div>
+             </div>
+
+
+             <div class="container-fluid">
+                <div class="row">
+             <div class="section5 col-lg-4">
+                <div class="animage3"></div>
+                </div>
+                <div class="col-lg-8">
+                <div class="anitext3">
+                    <p>"At our garage, we diagnose car issues with precision. 
+                        Our skilled technicians use advanced tools for repairs, ensuring quality and reliability. 
+                        We conduct thorough testing to guarantee optimal performance and safety."</p>
+                </div>
+                </div>
+                
+             </div>
+             </div>
+
+             <div class="container">
+                <div class="row">
+                    <div class="col-md">
+             <div class="section6">
+             <div class="services">SERVICES
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+
+
+
+
+
+             <div class="parent" id="services">
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/236x/f7/a8/51/f7a851136d0415e2fbb437ea5a661454.jpg" height="400px" width="300px" alt="">
+                    <div class="card-body">
+                        <h3 style="text-align: left;">Experienced mechanics</h3>
+                        <h5 class="text-wrap">All of our mechnics are well experienced with a great collection of skill set</h5>
+                        <button class="btn btn-outline-warning">VISIT US</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/474x/40/08/81/40088172d324cc106d103e473f35a0c1.jpg" height="400px" width="300px" alt="">
+                    <div class="card-body">
+                        <h3 style="text-align: left;">Restoration</h3>
+                        <h5 class="text-wrap">Make ur old car run like a brand-new one with our restoration</h5>
+                        <button class="btn btn-outline-warning">TRY IT NOW</button>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 20rem;">
+                    <img src="https://i.pinimg.com/236x/91/93/21/919321fbd111b219fbf2f4729804c287.jpg" height="400px" width="300px" alt="">
+                    <div class="card-body">
+                        <h3 style="text-align: left;">Car service</h3>
+                        <h5 class="text-wrap">Keep ur car well maintained.find the best suitable service packeges here.</h5>
+                        <button class="btn btn-outline-warning">FIND</button>
+                    </div>
+                </div>
+            </div>
+         <div class="button">
+           <a href="#"><i class="fa-solid fa-arrow-up" style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+
+            <form id="">
+                <div class="container">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+            <label for="name" class="form-label font-weight-bold" style="color: white;">Your name:</label>
+                <input type="text" class="form-control" id="name" placeholder="your name" style="border: 1px solid;">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+            <label for="email" class="form-label font-weight-bold" style="color: white;">Your mail id:</label>
+                <input type="text" class="form-control" id="email" placeholder="your mail id" style="border: 1px solid;" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+            <label for="select slot" class="form-label font-weight-bold" style="color: white;">date:</label>
+                <input type="date" class="form-control" id="select slot" placeholder="dd/mm/yyyy" style="border: 1px solid;">
+            </div>
+            <div class="form-row">
+         <div class="form-group col-md-6">
+                <label for="exampleFormControlTextarea1" style="color: white;">Example textarea:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="keep it here"></textarea>
+              </div>
+                    <br/>
+                    <a href="#"><button class="btn btn-outline-secondary">submit</button></a>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+                <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- <div class="container my-5"> -->
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white mt-5"
+            style="background-color: #0000"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+                VINTAGE RESTORATION
+              </h6>
+              <p>
+                Let your be in any condition. makeover is our thing.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Products</h6>
+              <p class="ftr">
+                <a href="#" class="text-white ftr" style="text-decoration: none;">tool kit</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white frt" style="text-decoration: none;">paints gun</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white ftr" style="text-decoration: none;">jocks</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white ftr" style="text-decoration: none;">water guns</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+                Membership
+              </h6>
+              <p class="ftr">
+                <a href="#" class="text-white" style="text-decoration: none;">Create an Account</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white" style="text-decoration: none;">log in</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white" style="text-decoration: none;">refer</a>
+              </p>
+              <p class="ftr">
+                <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+              </p>
+            </div>
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Contact</h6>
+              <p class="ftr"><i class="fas fa-home mr-3"></i>vizag,seethammadhara,tpt colony</p>
+              <p class="ftr"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+              <p class="ftr"><i class="fas fa-phone mr-3"></i> + 01 234 567 77</p>
+              <p class="ftr"><i class="fas fa-print mr-3"></i> + 01 234 567 77</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-3">
+  
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                © 2024 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/"
+                   >google.com</a
+                  >
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-facebook-f"></i
+                ></a>
+  
+              <!-- Twitter -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-twitter"></i
+                ></a>
+  
+              <!-- Google -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-google"></i
+                ></a>
+  
+              <!-- Instagram -->
+              <a
+                 class="btn btn-outline-light btn-floating m-1"
+                 class="text-white"
+                 role="button"
+                 ><i class="fab fa-instagram"></i
+                ></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+  <!-- </div> -->
+  <!-- End of .container -->
+
+          
+        </body>
+</html>
